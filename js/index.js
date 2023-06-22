@@ -11,8 +11,10 @@ const result = document.querySelector(".result");
 const clearBtn = document.querySelector(".btn-clear");
 const deleteBtn = document.querySelector(".btn-delete");
 
-addNumberButtonListeners(result);
-addOperatorButtonListeners(result);
-addEqualButtonListener(result);
-addClearButtonListener(result, clearBtn);
-addDeleteButtonListener(result, deleteBtn);
+if (result && clearBtn && deleteBtn) {
+  addNumberButtonListeners(result);
+  addOperatorButtonListeners(result);
+  addEqualButtonListener(result);
+  addClearButtonListener(result, clearBtn);
+  addDeleteButtonListener(result, deleteBtn);
+}
